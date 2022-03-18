@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./logos/favicon_bota_fora.svg" type="img">
+    <style>
+       :root {
+            --white:#ffffff;
+            --black:#000000;
+            --very-light-pink:#c7c7c7;
+            --text-input-field:#f7f7f7;
+            --hospital-green:#acd9b2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }        
+        body {
+            margin: 0px;
+            font-family:'Quicksand', sans-serif;
+        }
+        .menu {
+            display: none;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            height: 60px;
+            border: 1px solid var(--very-light-pink);
+        }
+        .logo {
+            width: 100px;
+        }
+        .nav-left ul, .nav-right ul {
+           list-style: none; 
+           padding: 0;
+           display: flex;
+           margin: 0 30px;
+        }
+        .nav-left ul li a {
+            text-decoration: none; 
+            color: var(--very-light-pink);
+            padding: 8px;
+            border: 1px solid var(--white);
+            border-radius: 8px;
+        }
+        .nav-left ul li a:hover {
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
+        }
+        .nav-left {
+            display: flex;
+        }
+        .nav-right ul {
+            display: flex;
+            align-items: center;
+        }
+        .nav-right ul li {
+            position: relative;
+        }
+        .nav-right ul li:nth-child(1) {
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .nav-right ul li div {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -6px;
+            right: -8px;
+            font-size: var(--sm);
+            font-weight: bold;
+            width: 15px;
+            height: 15px;
+            background-color: var(--hospital-green);
+            border-radius: 50%;
+        }
+        @media (max-width:640px) {
+            .menu {
+                display: block;
+            }    
+            .nav-left ul {
+                display: none;
+           }
+           .nav-right ul li:nth-child(1) {
+               display: none;
+           }
+        }
+        </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="./icons/icon_menu.svg" alt="" class="menu">
+   
+        <div class="nav-left">
+            <img src="./logos/logo_yard_sale.svg" alt="" class="logo">
+            <ul>
+                <li><a href="/">All</a></li>
+                <li><a href="/">Clothes</a></li>
+                <li><a href="/">Electronics</a></li>
+                <li><a href="/">Fornitures</a></li>
+                <li><a href="/">Toys</a></li>
+                <li><a href="/">Others</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li>correo@example.com</li>
+                <li><img src="./icons/icon_shopping_cart.svg" alt=""><div>3</div></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
